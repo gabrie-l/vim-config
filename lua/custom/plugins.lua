@@ -14,6 +14,10 @@ local plugins = {
     lazy=false,
   },
   {
+    "tpope/vim-eunuch",
+    lazy=false,
+  },
+  {
     "tpope/vim-surround",
     lazy=false,
   },
