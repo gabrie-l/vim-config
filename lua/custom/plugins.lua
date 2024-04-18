@@ -2,6 +2,22 @@ local cmp = require "cmp"
 
 local plugins = {
   {
+  "/nvim-treesitter/nvim-treesitter-context",
+    lazy=false,
+    config = function ()
+      require "custom.configs.nvim-treesitter-context"
+    end
+  },
+  {
+  "stevearc/oil.nvim",
+    config = function ()
+      require "custom.configs.oil"
+    end,
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  lazy=false,
+  },
+
+  {
     "mrcjkb/rustaceanvim",
     version = "^4",
     ft = { "rust" },
